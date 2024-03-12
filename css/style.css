@@ -1,0 +1,31 @@
+.logo {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.inline-card {
+    display: inline-block;
+    margin: 30px;
+}
+.gradient-background {
+    background: linear-gradient(300deg, #ec5c28, #d0c2b4, #3d4143);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
