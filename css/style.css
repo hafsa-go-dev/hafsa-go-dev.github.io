@@ -29,3 +29,12 @@ ul {
         background-position: 0% 50%;
     }
 }
+svg.dark {
+    text-decoration: none;
+    color: white;
+}
+
+svg.light {
+    text-decoration: none;
+    color: #383838;
+}

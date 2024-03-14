@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                <img class="logo" src="./assets/logos/logo.png" height="50px">
+                <img class="logo" src="./assets/logos/logo.png" alt="hafsa.dev flower logo" height="50px">
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -21,7 +21,16 @@
                 <li><a href="./contact.html" class="nav-link px-2 link-body-emphasis">Contact</a></li>
                 <li><a href="./portfolio.html" class="nav-link px-2 link-body-emphasis">Portfolio</a></li>
             </ul>
-
+            <div class="btn-group" role="group" aria-label="button group"><button type="button" class="btn btn-outline-secondary" id="light-mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"></path>
+                </svg>
+            </button><button type="button" class="btn btn-secondary" id="dark-mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"></path>
+                    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"></path>
+                </svg>
+            </button></div>
             <!--            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">-->
             <!--                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">-->
             <!--            </form>-->
@@ -45,38 +54,58 @@
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/exclamation-circle.svg" alt="exclamation circle" class="flex-shrink-0 me-3"
-                 width="30px" height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-exclamation-square light" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Critical thinker</h3>
                 <p>Able to analyze issues from multiple perspectives, with extraordinary attention to detail</p>
             </div>
         </div>
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/boxes.svg" alt="boxes" class="flex-shrink-0 me-3" width="30px" height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-boxes light" viewBox="0 0 16 16">
+                    <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Problem solver</h3>
                 <p>Resilient and innovative; able to persevere to solve difficult problems</p>
             </div>
         </div>
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/book.svg" alt="book" class="flex-shrink-0 me-3" width="30px" height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book light" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Lifelong learner</h3>
                 <p>Passionate about continuous improvement: love to learn, grow, and innovate</p>
             </div>
         </div>
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/calendar-check.svg" alt="calendar check" class="flex-shrink-0 me-3"
-                 width="30px" height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-check light" viewBox="0 0 16 16">
+                    <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"></path>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Highly organized</h3>
                 <p>Exceptional in organizational and time management skills</p>
             </div>
         </div>
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/chat-right-text.svg" alt="chat with text" class="flex-shrink-0 me-3"
-                 width="30px" height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-right-heart light" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"></path>
+                    <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Excellent communicator</h3>
                 <p>Proficient in communicating with colleagues and clients in a professional, effective, efficient,
@@ -84,24 +113,34 @@
             </div>
         </div>
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/code-slash.svg" alt="code icon" class="flex-shrink-0 me-3" width="30px"
-                 height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code-square light" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                    <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Hard-working</h3>
                 <p>Pursuing my dream of becoming a web developer & programmer; dedicated to learning and success</p>
             </div>
         </div>
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/hand-thumbs-up.svg" alt="thumbs up" class="flex-shrink-0 me-3" width="30px"
-                 height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-people-fill light" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Team player</h3>
                 <p>Great at collaborating effectively with others; remotely and in-person</p>
             </div>
         </div>
         <div class="col d-flex align-items-start">
-            <img src="./assets/icons/arrows-move.svg" alt="arrows icon" class="flex-shrink-0 me-3" width="30px"
-                 height="30px">
+            <div class="mb-3 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-angle-expand light" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"></path>
+                </svg>
+            </div>
             <div>
                 <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Experienced & flexible</h3>
                 <p>Making a career shift after gaining experience as an educator for the past ten years</p>
@@ -200,7 +239,7 @@
         <br>
     <div class="row align-items-md-stretch">
     <div class="col-md-6">
-        <div class="h-100 p-5 text-bg-light text-muted rounded-3">
+        <div class="h-100 p-5 first-box text-bg-secondary text-muted rounded-3">
             <h3 class="fs-2 text-body-emphasis">Air Tutors</h3>
             <p><em><strong>Online Tutor - All Subjects</strong> (Feb 2023 - Present)</em></p>
             <ul>
@@ -246,6 +285,7 @@
         </ul>
     </footer>
 </div></section>
+<script src="./js/extra.js" charset="UTF-8"></script>
 <script src="./js/bootstrap.bundle.js"></script>
 <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
